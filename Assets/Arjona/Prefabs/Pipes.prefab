@@ -204,6 +204,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8344786697300084056}
   - component: {fileID: 7266824073891669193}
+  - component: {fileID: 9066400843042797576}
+  - component: {fileID: 2087549723446632768}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Untagged
@@ -242,6 +244,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!65 &9066400843042797576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935546973929321663}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 9.97, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2087549723446632768
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935546973929321663}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6425089137844763316
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +284,7 @@ GameObject:
   - component: {fileID: 2666980908208287364}
   - component: {fileID: 8440721703538348833}
   - component: {fileID: 2216739995132647637}
-  - component: {fileID: 1096896407265960933}
+  - component: {fileID: 3349153961045940626}
   m_Layer: 0
   m_Name: DownBody
   m_TagString: Untagged
@@ -327,7 +358,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1096896407265960933
+--- !u!65 &3349153961045940626
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,7 +382,7 @@ GameObject:
   - component: {fileID: 7431927194816440768}
   - component: {fileID: 2954947211371777735}
   - component: {fileID: 6058319610041916861}
-  - component: {fileID: 1046293794561852666}
+  - component: {fileID: 8254966446549256986}
   m_Layer: 0
   m_Name: UpBody
   m_TagString: Untagged
@@ -425,7 +456,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1046293794561852666
+--- !u!65 &8254966446549256986
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -448,6 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5114930094038676232}
   - component: {fileID: 4825586408084228316}
+  - component: {fileID: 6899070771338122778}
   m_Layer: 0
   m_Name: ScoreTrigger
   m_TagString: Untagged
@@ -483,3 +515,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6899070771338122778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589417716690887124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec40921b67dd0a247ae047be990b1f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

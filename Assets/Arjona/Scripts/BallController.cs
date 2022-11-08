@@ -26,5 +26,10 @@ public class BallController : MonoBehaviour
             audioSource.PlayOneShot(clip);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("He morío!");
+    }
 }
 
