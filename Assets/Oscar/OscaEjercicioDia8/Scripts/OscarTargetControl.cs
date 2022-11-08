@@ -8,14 +8,15 @@ public class OscarTargetControl : MonoBehaviour
     public Vector3 InactPos, LastPos, CurPos;
     public List<Vector3> TarPos;
     public float Timer, Goal;
-    public int Score;
-    public Text ScrLabel;
+    public int Score, Bonus;
+    public Text ScrLabel, BonusLabel;
 
     // Start is called before the first frame update
     void Start()
     {
         Timer = 0;
         Score = 0;
+        Bonus = 10;
     }
 
     // Update is called once per frame
@@ -33,16 +34,19 @@ public class OscarTargetControl : MonoBehaviour
             else
             {
                 transform.position = InactPos;
+                Bonus = 10;
             }
             Timer = 0;
         }
 
         ScrLabel.text = Score.ToString();
+        BonusLabel.text = "Bonus: " + ((float)Bonus/10).ToString();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         transform.position = InactPos;
-        Score += 1;
+        Score += (100 * Bonus / 10);
+        Bonus += 1;
     }
 }

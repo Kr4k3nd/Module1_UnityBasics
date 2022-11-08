@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 12
+  parent: {fileID: 3145364906226834964}
 --- !u!54 &5792685379677415016
 Rigidbody:
   m_ObjectHideFlags: 0
