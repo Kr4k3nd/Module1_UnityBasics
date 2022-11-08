@@ -18,13 +18,17 @@ public class Camera_SR : MonoBehaviour
     {   
         if (isOn == true)
         {
-            transform.LookAt(Vector3.zero);
+            transform.LookAt(target);
         }
         else
         {
             this.transform.position = new Vector3(target.position.x, transform.position.y, transform.position.z);
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            isOn = !isOn;
+        }
        
     }
 }
