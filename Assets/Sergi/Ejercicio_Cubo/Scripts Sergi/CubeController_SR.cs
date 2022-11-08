@@ -12,7 +12,7 @@ public class CubeController_SR : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(1,0,0);
+        rb.velocity = new Vector3(-speed,0,0);
     }
 
     // Update is called once per frame
