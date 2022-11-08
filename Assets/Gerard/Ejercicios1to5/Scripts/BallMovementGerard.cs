@@ -15,6 +15,6 @@ public class BallMovementGerard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, 0, 0);     // hago que la posición en el vector x se transforme al valor negativo de X que ponga en speed multiplicado por el reloj del procesador
+        this.transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, 0);     // hago que la posición en el vector x se transforme al valor negativo de X que ponga en speed multiplicado por el reloj del procesador
     }
 }
