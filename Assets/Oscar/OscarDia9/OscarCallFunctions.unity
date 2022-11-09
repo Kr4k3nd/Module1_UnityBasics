@@ -5081,7 +5081,7 @@ MonoBehaviour:
   EnemProp: {fileID: 2870752254699893423, guid: 5da99e78b880fb84cbf7f367019ef42c, type: 3}
   BossProp: {fileID: 6559909773894652866, guid: b6d2337ea654df440bc15b6343f054d7, type: 3}
   PresentEnems: []
-  EnemsRemaining: 12
+  EnemsRemaining: 15
 --- !u!1 &673139684
 GameObject:
   m_ObjectHideFlags: 0

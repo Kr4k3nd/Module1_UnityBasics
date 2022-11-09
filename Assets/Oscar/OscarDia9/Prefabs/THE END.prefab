@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Life: 0
-  MaxLife: 45
+  MaxLife: 50
   Canon:
   - {fileID: 6559909773016657469}
   - {fileID: 6559909772993861881}
