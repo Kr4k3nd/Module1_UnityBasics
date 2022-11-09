@@ -35,12 +35,11 @@ public class OscarTargetControl : MonoBehaviour
             {
                 transform.position = InactPos;
                 Bonus = 10;
+                ScrLabel.text = Score.ToString();
+                BonusLabel.text = "Bonus X" + ((float)Bonus / 10).ToString();
             }
             Timer = 0;
         }
-
-        ScrLabel.text = Score.ToString();
-        BonusLabel.text = "Bonus X" + ((float)Bonus/10).ToString();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,5 +47,8 @@ public class OscarTargetControl : MonoBehaviour
         transform.position = InactPos;
         Score += (100 * Bonus / 10);
         Bonus += 1;
+
+        ScrLabel.text = Score.ToString();
+        BonusLabel.text = "Bonus X" + ((float)Bonus / 10).ToString();
     }
 }
