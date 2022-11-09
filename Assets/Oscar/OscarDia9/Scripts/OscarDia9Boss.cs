@@ -63,6 +63,14 @@ public class OscarDia9Boss : MonoBehaviour
             {
                 AttackD();
             }
+            if (AtkPatern[CurrAtk] == 4)
+            {
+                AttackE();
+            }
+            if (AtkPatern[CurrAtk] == 5)
+            {
+                AttackF();
+            }
             //Resets
             GunTimer = 0;
             CurrAtk += 1;
@@ -71,7 +79,7 @@ public class OscarDia9Boss : MonoBehaviour
 
     }
 
-    //Attacks
+    //Attacks in Paperfan
     public void AttackA()
     {
 
@@ -113,6 +121,29 @@ public class OscarDia9Boss : MonoBehaviour
         Instantiate(Ammo, Canon[3].position, Quaternion.Euler(0, 180, 0));
         Instantiate(Ammo, Canon[4].position, Quaternion.Euler(0, 180, -5));
         Instantiate(Ammo, Canon[5].position, Quaternion.Euler(0, 180, -10));
+        Instantiate(Ammo, Canon[6].position, Quaternion.Euler(0, 180, -15));
+    }
+
+    //Other attacks
+    public void AttackE()
+    {
+        Instantiate(Ammo, Canon[0].position, Quaternion.Euler(0, 180, -15));
+
+
+
+
+
+        Instantiate(Ammo, Canon[6].position, Quaternion.Euler(0, 180, 15));
+    }
+
+    public void AttackF()
+    {
+        Instantiate(Ammo, Canon[0].position, Quaternion.Euler(0, 180, 15));
+        Instantiate(Ammo, Canon[1].position, Quaternion.Euler(0, 180, -10));
+        
+
+
+        Instantiate(Ammo, Canon[5].position, Quaternion.Euler(0, 180, 10));
         Instantiate(Ammo, Canon[6].position, Quaternion.Euler(0, 180, -15));
     }
 
