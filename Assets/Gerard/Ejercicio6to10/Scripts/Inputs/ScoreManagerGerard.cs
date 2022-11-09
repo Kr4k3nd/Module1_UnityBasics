@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class ScoreManagerGerard : MonoBehaviour
 {
-   private void OnTriggerEnter(Collider other)
+
+   private Text score;
+    public int MaxScore = 2;
+
+    private void Start()
     {
-        if (other.tag == "Bullet")
-        {
-            GameManager.score = GameManager.score + 1;
-            Debug.Log(GameManager.score);
-        }
+        score = GetComponent<Text>();
+    }
+
+ 
+    public void ScoreUpdate()
+    {
+        score.text = (GameManager.score + MaxScore).ToString();
     }
 }

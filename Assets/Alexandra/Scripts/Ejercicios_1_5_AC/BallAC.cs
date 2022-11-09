@@ -23,11 +23,11 @@ public class BallAC : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Ejercicios 2 y 3 La bola se destruye y hace deja un sistema de particulas detras
-        Instantiate(Pop, transform.position, Quaternion.identity);
+        //Instantiate(Pop, transform.position, Quaternion.identity);
         Destroy(gameObject);
 
         //En cuanto entre en contacto que pete y se destruya
-
+        Debug.Log("Entra");
 
     }
 
