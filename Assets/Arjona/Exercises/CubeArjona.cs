@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SampleArjona : MonoBehaviour
+public class CubeArjona : MonoBehaviour
 {
-    public GameObject[] waypoints;
-    public GameObject prefab;
+    public CanvasUpdateArjona uiUpdate;
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +15,9 @@ public class SampleArjona : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
-            int r = Random.Range(0, waypoints.Length);
-            Instantiate(prefab, waypoints[r].transform);
+            uiUpdate.ScoreUpdate();
         }
     }
 }
