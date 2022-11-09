@@ -20,9 +20,9 @@ public class BulletSpawnGerard : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(BulletShoot, waypoint);
+            Instantiate(BulletShoot, transform.position, Quaternion.identity);
         }
 
-        Object.Destroy(gameObject, 7f);
+        
     }
 }

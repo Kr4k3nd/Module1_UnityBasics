@@ -13,6 +13,6 @@ public class DestroyerGerard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Object.Destroy(gameObject, 7f);
     }
 }
