@@ -10,6 +10,7 @@ public class TargetsGerard : MonoBehaviour
     public float cooldown = 3;
     private float resetCooldown;
     public Transform waypoint;
+    
 
     void Start()
     {
@@ -25,6 +26,6 @@ public class TargetsGerard : MonoBehaviour
             Instantiate(TargetShoot, waypoint);
             cooldown = resetCooldown;
         }
-
+        Object.Destroy(gameObject, 7f);
     }
 }
