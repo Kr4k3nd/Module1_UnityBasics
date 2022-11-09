@@ -603,7 +603,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bonus: 1000'
+  m_Text: 'Bonus X 100
+
+'
 --- !u!222 &751050410
 CanvasRenderer:
   m_ObjectHideFlags: 0

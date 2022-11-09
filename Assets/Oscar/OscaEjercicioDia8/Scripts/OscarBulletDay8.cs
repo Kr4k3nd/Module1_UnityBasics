@@ -5,7 +5,7 @@ using UnityEngine;
 public class OscarBulletDay8 : MonoBehaviour
 {
     public float Speed;
-    public GameObject parent;
+    public GameObject parent, Pop;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class OscarBulletDay8 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Instantiate(Pop, transform.position, Quaternion.identity);
         Destroy(parent);
     }
 }

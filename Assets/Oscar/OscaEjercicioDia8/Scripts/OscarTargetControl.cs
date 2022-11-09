@@ -40,7 +40,7 @@ public class OscarTargetControl : MonoBehaviour
         }
 
         ScrLabel.text = Score.ToString();
-        BonusLabel.text = "Bonus: " + ((float)Bonus/10).ToString();
+        BonusLabel.text = "Bonus X" + ((float)Bonus/10).ToString();
     }
 
     private void OnTriggerEnter(Collider other)

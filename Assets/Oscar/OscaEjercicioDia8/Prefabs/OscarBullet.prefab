@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 12
   parent: {fileID: 3145364906226834964}
+  Pop: {fileID: 4903416610103257582, guid: b99b49c42d5cd24428fd4fed3d18f837, type: 3}
 --- !u!54 &5792685379677415016
 Rigidbody:
   m_ObjectHideFlags: 0
