@@ -9,11 +9,11 @@ public class CanvasUpdateArjona : MonoBehaviour
 
     public Text score;
     public int scorepoints;
-    
+    public int previousScorepoints;
 
-  public void ScoreUpdate()
+
+    public void ScoreUpdate()
     {
-        scorepoints = scorepoints + 1;
         score.text = scorepoints.ToString();
     }
 }

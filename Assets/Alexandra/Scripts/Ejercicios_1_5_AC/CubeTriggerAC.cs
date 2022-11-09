@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class CubeTriggerAC : MonoBehaviour
 {
-    public GameObject Cube;
-    private Rigidbody rb;
-    public float speed;
-
+    public ParticleSystem particles;
+    
     private void OnTriggerEnter(Collider other)     // hacemos que cuando entre en Trigger por colisión haga lo siguiente:
     {
+        particles.Play();
         Destroy(other.gameObject);              // destruye el objeto del juego
     }
 }
