@@ -32,7 +32,7 @@ public class CameraBallTargetAC : MonoBehaviour
                 transform.position = target.position + FramePos;
             }
         }
-
+        //Aquí indicamos que con el clic se lleve a cabo la acción
         if (Input.GetMouseButtonDown(0)) { ModeA = !ModeA; }
 
         }
