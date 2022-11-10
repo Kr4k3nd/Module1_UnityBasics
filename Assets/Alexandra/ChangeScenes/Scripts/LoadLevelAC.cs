@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 //cargar escenas. Cuidado si no se carga la librería estará gris claro que no haya un archivo que tenga el mismo nombre
 
-public class LoadLevel : MonoBehaviour
+public class LoadLevelAC : MonoBehaviour
 {
 
     public string level1;   //cadena de texto "___"
