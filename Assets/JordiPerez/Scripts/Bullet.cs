@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bulletmove_qpalau : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     public float Speed;
-    public GameObject parent;
+    public GameObject padre;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +17,13 @@ public class bulletmove_qpalau : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0, 0, Speed * Time.deltaTime);
-        Destroy(parent, 1);
+        Destroy(padre, 1);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(parent);
+        Destroy(padre);
     }
 
+
 }
-
-
