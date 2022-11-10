@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollowJP : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
 
     public Vector3 StartPos, FramePos;
@@ -27,8 +27,8 @@ public class CameraFollowJP : MonoBehaviour
 
         if (ModeA == true)
         {
-            transform.position = StartPos;
-
+            transform.position = StartPos; 
+           
         }
         else
         {
@@ -42,3 +42,6 @@ public class CameraFollowJP : MonoBehaviour
 
 
 }
+
+
+
