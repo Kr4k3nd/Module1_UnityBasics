@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class bulletmove_qpalau : MonoBehaviour
 {
-    public float Speed = 3;
+    public float Speed;
     public GameObject parent;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +24,6 @@ public class bulletmove_qpalau : MonoBehaviour
         Destroy(parent);
     }
 
-
 }
+
+
