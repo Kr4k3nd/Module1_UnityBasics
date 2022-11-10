@@ -18,12 +18,12 @@ public class OscarDia9Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Moving to it's position
         if (transform.position != MyPos)
         {
-            transform.position = Vector3.Lerp(transform.position, MyPos, 0.01f);
+            transform.position = Vector3.Lerp(transform.position, MyPos, 0.1f);
         }
 
         //Death when life reachs 0
