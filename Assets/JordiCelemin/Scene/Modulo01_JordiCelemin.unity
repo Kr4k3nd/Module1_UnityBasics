@@ -246,7 +246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a7811bb5aa9a4e8e696052f7f20a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: {fileID: 102900000, guid: d8cf34bad0a58c14dbe48d35620a1a2e, type: 3}
 --- !u!4 &610887360
 Transform:
   m_ObjectHideFlags: 0
@@ -543,7 +542,7 @@ GameObject:
   - component: {fileID: 1481532598}
   - component: {fileID: 1481532601}
   - component: {fileID: 1481532600}
-  - component: {fileID: 1481532599}
+  - component: {fileID: 1481532602}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -571,18 +570,6 @@ RectTransform:
   m_AnchoredPosition: {x: -354, y: -150}
   m_SizeDelta: {x: 660, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1481532599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481532597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e89663a0b41972247994d1ad0b06a008, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1481532600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,6 +612,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481532597}
   m_CullTransparentMesh: 1
+--- !u!114 &1481532602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481532597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ff1616e1e69134badb241e4ae206d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1481532600}
+  scorepoint: 0
 --- !u!1001 &1747039227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -675,6 +676,10 @@ PrefabInstance:
     - target: {fileID: 4520540431933879099, guid: 95f6471dbf5ebd749bc282b3db4ce212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839196978909927394, guid: 95f6471dbf5ebd749bc282b3db4ce212, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6578314666884509546, guid: 95f6471dbf5ebd749bc282b3db4ce212, type: 3}
       propertyPath: m_Name
