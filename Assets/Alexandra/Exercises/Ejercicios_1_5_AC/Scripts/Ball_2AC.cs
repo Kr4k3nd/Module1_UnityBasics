@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallAC : MonoBehaviour
+public class Ball_2AC : MonoBehaviour
 {
     public float Speed;         //mención parámetro velocidad
     public GameObject Pop;     //ni papa. Ahhhhh en Pop de Unity va

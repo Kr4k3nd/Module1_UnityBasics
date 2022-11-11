@@ -548,7 +548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db54d7492ba617a4698bbf217fc5c857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cube: {fileID: 0}
   particles: {fileID: 1547346856}
 --- !u!1001 &1268493447
 PrefabInstance:
@@ -603,7 +602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8060216596736908185, guid: 7300ccc03606afb4db3dd5cc1083418b, type: 3}
       propertyPath: m_Name
-      value: BallAC
+      value: PelotaAC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7300ccc03606afb4db3dd5cc1083418b, type: 3}

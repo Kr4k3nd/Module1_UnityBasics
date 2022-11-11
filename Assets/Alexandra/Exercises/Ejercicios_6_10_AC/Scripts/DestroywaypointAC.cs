@@ -13,6 +13,6 @@ public class DestroywaypointAC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 1f);        //que se destruya cuando pase 1segundo
     }
 }
