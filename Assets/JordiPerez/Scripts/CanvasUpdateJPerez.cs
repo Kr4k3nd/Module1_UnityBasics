@@ -15,8 +15,5 @@ public class CanvasUpdateJPerez : MonoBehaviour
         score.text = scorepoints.ToString(); 
     }
 
-    private void Update()
-    {
-        
-    }
+    
 }

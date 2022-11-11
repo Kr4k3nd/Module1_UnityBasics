@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class bulletmove_qpalau : MonoBehaviour
 {
-    
-    public GameObject Paco;
-    public GameObject BulletShoot;
-    public Transform waypoint;
+   
+    public float Speed;
+    public GameObject padre;
 
     // Start is called before the first frame update
     void Start()
@@ -18,14 +17,16 @@ public class bulletmove_qpalau : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Instantiate(BulletShoot, transform.position, Quaternion.identity);
-        }
-
-
-
+        transform.position += new Vector3(0, 0, Speed * Time.deltaTime);
+        Destroy(padre, 1);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(padre);
+    }
+
+
 }
 
 
