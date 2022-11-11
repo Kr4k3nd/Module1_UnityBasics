@@ -6,6 +6,6 @@ public class DestroyCube_JCG : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        Destroy(gameObject, 3f);
     }
 }

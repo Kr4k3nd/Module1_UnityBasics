@@ -6,6 +6,7 @@ public class BulletJCG : MonoBehaviour
 {
     public float Speed;
     public GameObject parent;
+    public CanvasUpdateJordiCelemin cVJCG;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class BulletJCG : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        cVJCG.ScoreUpdate();    
         Destroy(parent);
     }
 }

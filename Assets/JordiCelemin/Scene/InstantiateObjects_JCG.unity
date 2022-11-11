@@ -1313,4 +1313,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 1362040315}
-  scorepoint: 0
+  scorepoint: 3
