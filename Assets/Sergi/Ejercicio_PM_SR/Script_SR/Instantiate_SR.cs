@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Instantiate_SR : MonoBehaviour
 {
-
+    /*
     public GameObject prefabToInstantiate;                      //objeto a instanciar
     public Transform waypoint;                                  //el sitio donde los instanciaremos        
 
@@ -28,5 +28,6 @@ public class Instantiate_SR : MonoBehaviour
             time = resetTime;
         }
     }
+    */
 }
 

@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class BulletAC : MonoBehaviour
+public class DestroybulletAC : MonoBehaviour
 {
-    //move bullet
-    public float Speed;         //mención parámetro velocidad
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +13,6 @@ public class BulletAC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0, Speed) * Time.deltaTime;   //mover bullet
+        
     }
-
 }

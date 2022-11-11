@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 public class PointsUI : MonoBehaviour
-{
+{ /*
     public static ScoreManager instance;
 
     public Text scoreText;
@@ -28,6 +28,6 @@ public class PointsUI : MonoBehaviour
         scoreText.text = score.ToString() + "POINTS";
     }
 
-
+    */
 
 }
