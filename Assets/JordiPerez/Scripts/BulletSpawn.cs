@@ -7,6 +7,7 @@ public class BulletSpawn : MonoBehaviour
     public GameObject Paco;
     public GameObject BulletShoot;
     public Transform waypoint;
+    
 
     // Start is called before the first frame update
     void Start()

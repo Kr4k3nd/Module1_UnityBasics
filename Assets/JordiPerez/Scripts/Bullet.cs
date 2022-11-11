@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour
 {
     public float Speed;
     public GameObject padre;
+    public CanvasUpdateJPerez cVJP;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +22,8 @@ public class Bullet : MonoBehaviour
         Destroy(padre, 1);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(padre);
-    }
+     
+    
 
 
 }

@@ -16,7 +16,10 @@ public class TargetGenerator : MonoBehaviour
     void Start()
     {
         resetCooldown = cooldown;
+        
     }
+
+    
 
     // Update is called once per frame
     void Update()
@@ -27,10 +30,15 @@ public class TargetGenerator : MonoBehaviour
         {
             Instantiate(Diana, waypoint);
             cooldown = resetCooldown;          // cooldown = 3
+
+
         }
+
+
 
         
     }
+
 
 
 }
