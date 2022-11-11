@@ -32,7 +32,7 @@ public class OscarDia9Boss : MonoBehaviour
         //Moving to it's position
         if (transform.position != MyPos)
         {
-            transform.position = Vector3.Lerp(transform.position, MyPos, 0.006f);
+            transform.position = Vector3.Lerp(transform.position, MyPos, 0.06f);
         }
 
         //Death when life reachs 0

@@ -14,6 +14,8 @@ public class OscarDia9Nave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //FPS Limit
+        Application.targetFrameRate = 30;
         Life = MaxLife;
         LifeLabel.text = Life.ToString();
     }
