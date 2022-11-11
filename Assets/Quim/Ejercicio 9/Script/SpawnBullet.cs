@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class SpawnBullet : MonoBehaviour
 {
-    public float Speed;
-    public GameObject parent;
+    
+    public float speed;
+    public GameObject bullet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +17,8 @@ public class SpawnBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0, Speed * Time.deltaTime);
-        Destroy(parent, 1);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(parent);
+        transform.position += new Vector3(0, 0, speed * Time.deltaTime);
+        Destroy(bullet, 5f);
     }
 
 }
