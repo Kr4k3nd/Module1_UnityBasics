@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroywaypointAC : MonoBehaviour
+public class DestroywaypointAC : MonoBehaviour      //destroy cube
 {
     // Start is called before the first frame update
-    void Start()
+  
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Destroy(gameObject, 1f);        //que se destruya cuando pase 1segundo
+        Destroy(gameObject, 3f);        //que se destruya cuando pase 1segundo
     }
 }

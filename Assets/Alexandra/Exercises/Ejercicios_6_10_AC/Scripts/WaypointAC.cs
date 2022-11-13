@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaypointAC : MonoBehaviour
+public class WaypointAC : MonoBehaviour             //instanciar (invocación xD) cubo
 {
     public GameObject TargetAC;                     //objeto a instanciar
     public Transform waypoint;                      //punto a instanciar
