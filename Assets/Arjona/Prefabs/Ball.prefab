@@ -230,11 +230,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5906076454455291919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332b324bf0ee388409bbb152e01ad5df, type: 3}
+  m_Script: {fileID: 11500000, guid: 166c807c77794124d842ee6b8b2712d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jump: 500
-  clip: {fileID: 8300000, guid: 99713deea2262964fbcd504fd266e110, type: 3}
+  jump: 200
+  clip: {fileID: 0}
 --- !u!1 &6578314666884509546
 GameObject:
   m_ObjectHideFlags: 0
